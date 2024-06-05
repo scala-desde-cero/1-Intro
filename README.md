@@ -2,7 +2,7 @@
 
 1. [Intro](#schema1)
 2. [Diferencias básicas con Java](#schema2)
-
+3. [Ejemplo. Crear un proyecto](#schema3)
 
 
 10. [REF](#schemaref)
@@ -18,6 +18,12 @@
 ![](./img/intro_3.png)
 ![](./img/intro_4.png)
 
+### **sbt (Scala Build Tool)**
+`sbt` es la herramienta de construcción recomendada para Scala, similar a Maven o Gradle para Java.
+### **coursier**
+`coursier`, una herramienta moderna y poderosa para gestionar dependencias y distribuciones en el ecosistema de Scala. `coursier` puede simplificar la instalación y actualización de Scala, sbt, y otras herramientas.
+
+
 
 <hr>
 
@@ -31,13 +37,26 @@
 
 
 
+## 3. Ejemplo. Crear un proyecto 
 
+1. En Visual Studio Code instalar la extencion Metals.
+2. Ejecuta el siguiente comando para iniciar un nuevo proyecto con sbt en la carpeta deseada:
 
+```scala
+sbt new scala/hello-world.g8
+```
+  - Esto creará un proyecto Scala básico con una sola clase que imprime "Hello, World!".
 
+  - Cuando aparezca esto, `name [Hello World template]:` poner el nombre del proyecto en este caso `hello_world`
 
+  - Espera a que sbt descargue las dependencias y genere la estructura del proyecto.
 
+3.  Para ejecutar el código, simplemente abre una terminal, vavega en la terminal hasta la caperte `src/main` y ejecuta
+```sbt
+sbt run
+```
 
-
+![](./img/hello_world.png)
 
 
 
@@ -50,3 +69,6 @@
 
 ## REF: 
 https://www.udemy.com/course/scala-desde-cero/
+
+Doc: https://scala-lang.org/
+Install: https://docs.scala-lang.org/getting-started/index.html
