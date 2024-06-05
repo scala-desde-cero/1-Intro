@@ -3,9 +3,7 @@
 1. [Intro](#schema1)
 2. [Diferencias básicas con Java](#schema2)
 3. [Ejemplo. Crear un proyecto](#schema3)
-
-
-10. [REF](#schemaref)
+4. [REF](#schemaref)
 
 <hr>
 
@@ -35,7 +33,9 @@
 ![](./img/dif_2.png)
 ![](./img/dif_3.png)
 
+<hr>
 
+<a name="schema3"></a>
 
 ## 3. Ejemplo. Crear un proyecto 
 
