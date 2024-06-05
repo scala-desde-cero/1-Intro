@@ -42,7 +42,7 @@
 1. En Visual Studio Code instalar la extencion Metals.
 2. Ejecuta el siguiente comando para iniciar un nuevo proyecto con sbt en la carpeta deseada:
 
-```scala
+```bash
 sbt new scala/hello-world.g8
 ```
   - Esto creará un proyecto Scala básico con una sola clase que imprime "Hello, World!".
@@ -50,6 +50,26 @@ sbt new scala/hello-world.g8
   - Cuando aparezca esto, `name [Hello World template]:` poner el nombre del proyecto en este caso `hello_world`
 
   - Espera a que sbt descargue las dependencias y genere la estructura del proyecto.
+  - Ejecuta el siguiente comando para iniciar un nuevo proyecto con sbt:
+
+```bash
+sbt new scala/scala-seed.g8
+```
+  - Este comando utiliza la plantilla `scala-seed.g8`, que crea un proyecto Scala simple y vacío sin ninguna clase o código predefinido.
+```
+my-scala-project/
+  ├── build.sbt
+  ├── project/
+  │   └── build.properties
+  └── src/
+      └── main/
+          └── scala/
+              └── YourPackageName/
+                  └── Main.scala
+```
+
+
+
 
 3.  Para ejecutar el código, simplemente abre una terminal, vavega en la terminal hasta la caperte `src/main` y ejecuta
 ```sbt
@@ -71,4 +91,5 @@ sbt run
 https://www.udemy.com/course/scala-desde-cero/
 
 Doc: https://scala-lang.org/
+
 Install: https://docs.scala-lang.org/getting-started/index.html
